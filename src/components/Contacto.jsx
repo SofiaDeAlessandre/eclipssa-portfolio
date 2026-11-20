@@ -7,7 +7,7 @@ export default function Contacto() {
     <section className="contacto" aria-labelledby="t-contacto">
       <Destello className="d-pie" />
       <h2 id="t-contacto" className="contacto-frase">¿Cuál te gustó más?</h2>
-      <p>Escribinos para que sea tu próximo accesorio destacado.</p>
+      <p>¡Solicitalo por nuestros canales oficiales!</p>
       <div className="contacto-botones">
         <a className="boton boton-verde" href={linkWhatsApp(MENSAJE_GENERAL)} target="_blank" rel="noopener">
           Escribinos por WhatsApp
