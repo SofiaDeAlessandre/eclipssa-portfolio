@@ -1,0 +1,14 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[[headers]]
+  for = "/img/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+# Para que /catalogo, /informacion, etc. funcionen al entrar directo o recargar
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
