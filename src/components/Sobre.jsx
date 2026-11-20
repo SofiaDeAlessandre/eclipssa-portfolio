@@ -24,8 +24,8 @@ export default function Sobre() {
         </div>
         <img
           className="sobre-foto"
-          src={foto("cadenas-gold")}
-          alt="Cadenas Gold de acero dorado sobre encaje"
+          src={foto("anillo-sol-dorado-2")}
+          alt="Anillo Sol Dorado regulable sobre encaje"
           loading="lazy"
         />
       </div>
