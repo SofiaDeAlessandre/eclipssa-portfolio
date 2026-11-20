@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { COLECCIONES } from "../data/productos";
 import { foto, srcSet, precioTexto, linkWhatsApp, mensajeProducto } from "../utils/catalogo";
+import { evento } from "../utils/analytics";
 
 export default function Detalle({ producto: p, onCerrar }) {
   const dialogo = useRef(null);
@@ -98,6 +99,7 @@ export default function Detalle({ producto: p, onCerrar }) {
             <a
               className="boton boton-wa"
               href={linkWhatsApp(mensajeProducto(p, variante))}
+              onClick={() => evento("consulta_whatsapp", { producto: p.nombre, opcion: variante ?? "" })}
               target="_blank"
               rel="noopener"
             >

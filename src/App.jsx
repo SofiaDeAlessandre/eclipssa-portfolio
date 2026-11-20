@@ -8,6 +8,7 @@ import Inicio from "./pages/Inicio";
 import CatalogoPagina from "./pages/CatalogoPagina";
 import Informacion from "./components/Informacion";
 import Sobre from "./components/Sobre";
+import { verPagina } from "./utils/analytics";
 
 const TITULOS = {
   "/": "Eclipssa | Accesorios para brillar como la Luna",
@@ -24,6 +25,7 @@ export default function App() {
     window.scrollTo({ top: 0, behavior: "instant" });
     document.title = TITULOS[pathname] ?? "Catálogo | Eclipssa";
   }, [pathname]);
+  verPagina(pathname, document.title);
 
   return (
     <>

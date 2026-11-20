@@ -10,6 +10,9 @@ import "@fontsource/cormorant-garamond/600.css";
 import "@fontsource/cormorant-garamond/500-italic.css";
 import "./styles.css";
 import App from "./App";
+import { iniciarAnalytics } from "./utils/analytics";
+
+iniciarAnalytics();
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
